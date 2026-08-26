@@ -72,7 +72,7 @@ export default function Home() {
             <div>
               <p className="font-bold leading-none tracking-tight">ATENEO</p>
               <span className="text-xs uppercase tracking-[0.3em] text-[#e7d7b0]">
-                Rural Esquel
+                Sociedad Rural Esquel
               </span>
             </div>
           </a>
@@ -153,7 +153,7 @@ export default function Home() {
         <div className="grid gap-14 md:grid-cols-[0.7fr_1.3fr]"><div><p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#bd6d3b]">Agenda abierta</p><h2 className="text-4xl font-bold leading-tight md:text-6xl">Nos vemos en el campo.</h2><p className="mt-6 text-[#526158]">Traé mate, preguntas y ganas de cruzarte con gente que está en la misma.</p></div><div className="border-t-2 border-[#26372d]">{agenda.map(([fecha, titulo, lugar]) => (<article key={titulo} className="grid gap-3 border-b border-[#c9c3b5] py-6 md:grid-cols-[110px_1fr_auto] md:items-center"><p className="font-mono text-sm font-bold text-[#bd6d3b]">{fecha}</p><div><h3 className="text-xl font-bold">{titulo}</h3><p className="mt-1 text-sm text-[#718077]">{lugar}</p></div><CalendarDays className="hidden text-[#bd6d3b] md:block" size={22} /></article>))}</div></div>
       </section>
 
-      <section id="contacto" className="bg-[#bd6d3b] px-6 py-24 text-[#fffaf0] md:py-28"><div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-end"><div><p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#f4e5c3]">¿Te sumás?</p><h2 className="max-w-3xl text-5xl font-bold leading-none md:text-7xl">El próximo proyecto puede ser el tuyo.</h2></div><div><p className="mb-7 leading-relaxed text-[#fae9d5]">Escribinos para conocer la agenda, proponer una actividad o simplemente venir a compartir una ronda.</p><a href="mailto:hola@ateneorural.com" className="inline-flex items-center gap-3 bg-[#26372d] px-6 py-4 font-semibold transition hover:bg-white hover:text-[#26372d]">hola@ateneorural.com <ArrowUpRight size={19} /></a></div></div></section>
+      <section id="contacto" className="bg-[#bd6d3b] px-6 py-24 text-[#fffaf0] md:py-28"><div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-end"><div><p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#f4e5c3]">¿Te sumás?</p><h2 className="max-w-3xl text-5xl font-bold leading-none md:text-7xl">El próximo proyecto puede ser el tuyo.</h2></div><div><p className="mb-7 leading-relaxed text-[#fae9d5]">Escribinos para conocer la agenda, proponer una actividad o simplemente venir a compartir una ronda.</p><a href="mailto:ateneosresquel@gmail.com" className="inline-flex items-center gap-3 bg-[#26372d] px-6 py-4 font-semibold transition hover:bg-white hover:text-[#26372d]">ateneosresquel@gmail.com <ArrowUpRight size={19} /></a></div></div></section>
 
       <footer className="bg-[#26372d] px-6 py-8 text-sm text-[#c8d0c5]"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 md:flex-row"><p>© {new Date().getFullYear()} Ateneo Rural Esquel</p><p>Territorio · Comunidad · Futuro</p></div></footer>
     </main>
