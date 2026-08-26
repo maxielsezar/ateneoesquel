@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Ateneo Rural Esquel",
     images: [
       {
-        url: "/logo%20ateneo.jpg",
+        url: "/logonuevo.png",
         width: 640,
         height: 640,
         alt: "Logo de Ateneo Rural Esquel",
@@ -57,15 +57,15 @@ export const metadata: Metadata = {
     title: "Ateneo Rural Esquel",
     description:
       "Una comunidad joven que produce, comparte y construye futuro desde el campo.",
-    images: ["/logo%20ateneo.jpg"],
+    images: ["/logonuevo.png"],
   },
   robots: {
     index: true,
     follow: true,
   },
   icons: {
-    icon: "/logo%20ateneo.jpg",
-    apple: "/logo%20ateneo.jpg",
+    icon: "/favicon.ico",
+    apple: "/logonuevo.png",
   },
 };
 

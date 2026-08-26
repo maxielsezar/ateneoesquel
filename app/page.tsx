@@ -63,11 +63,11 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <a href="#inicio" className="flex items-center gap-3">
             <Image
-              src="/logo%20ateneo.jpg"
+              src="/logonuevo.png"
               alt="Logo del Ateneo Rural"
               width={52}
               height={52}
-              className="h-11 w-11 rounded-full object-cover ring-2 ring-[#e7d7b0]"
+              className="h-12 w-14 object-contain"
             />
             <div>
               <p className="font-bold leading-none tracking-tight">ATENEO</p>
