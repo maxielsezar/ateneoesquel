@@ -97,7 +97,7 @@ const directiva = [
   },  
   {
     cargo: "Vocal",
-    nombre: "Nicolas",
+    nombre: "Nicolas Daleoso",
     foto: "/nicolas.jpeg",
     descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
   }, 
@@ -105,6 +105,18 @@ const directiva = [
     cargo: "Vocal",
     nombre: "Nia Jones",
     foto: "/nia.jpeg",
+    descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
+  },
+   {
+    cargo: "Vocal",
+    nombre: "Bauti",
+    foto: "/bauti.jpeg",
+    descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
+  },
+  {
+    cargo: "Vocal",
+    nombre: "Amalia Corti Maderna",
+    foto: "/amalia.jpeg",
     descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
   },
   {
