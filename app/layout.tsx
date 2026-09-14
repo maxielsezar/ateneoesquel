@@ -39,25 +39,32 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_AR",
-    title: "Ateneo Rural Esquel",
+    url: "/",
+    title: "Ateneo Sociedad Rural Esquel",
     description:
-      "Comunidad, proyectos y encuentros para jóvenes que eligen construir futuro en el campo.",
-    siteName: "Ateneo Rural Esquel",
+      "El Ateneo Rural Esquel reúne a jóvenes, familias y productores para compartir proyectos, trabajo y futuro desde el campo patagónico.",
+    siteName: "Ateneo Sociedad Rural Esquel",
     images: [
       {
-        url: "/logonuevo.png",
+        url: "/logo.png",
         width: 640,
         height: 640,
-        alt: "Logo de Ateneo Rural Esquel",
+        type: "image/jpeg",
+        alt: "Logo del Ateneo de la Sociedad Rural de Esquel",
       },
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Ateneo Rural Esquel",
     description:
-      "Una comunidad joven que produce, comparte y construye futuro desde el campo.",
-    images: ["/logonuevo.png"],
+      "Jóvenes, familias y productores construyendo comunidad, proyectos y futuro desde el campo patagónico.",
+    images: [
+      {
+        url: "/logo.png",
+        alt: "Logo del Ateneo de la Sociedad Rural de Esquel",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -65,7 +72,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/logonuevo.png",
+    apple: "/logo.png",
   },
 };
 
