@@ -49,9 +49,58 @@ const propuestas = [
 ];
 
 const agenda = [
-  ["12 OCT", "Feria de proyectos jóvenes", "Paraje Nahuelpan"],
-  ["26 OCT", "Taller de huerta y compost", "Ateneo Rural Esquel"],
-  ["09 NOV", "Fogón: historias de nuestro campo", "Valle Chico"],
+  ["8 OCT", "14 a 18 hs: Ingreso de animales", "Sociedad Rural Esquel"],
+  ["9 OCT", "Jura de Razas Angus y Hereford", "Sociedad Rural Esquel"],
+  ["9 OCT", "21:00: Peña folklórica: La Muda", "Sociedad Rural Esquel"],
+  ["10 OCT", "Jura de Razas Angus y Hereford", "Sociedad Rural Esquel"],
+  ["10 OCT", "21:00: Peña folklórica: El Entrevero", "Sociedad Rural Esquel"],
+  ["11 OCT", "13:00: Asado Tradicional", "Sociedad Rural Esquel"],
+  ["11 OCT", "14:30: Remate", "Sociedad Rural Esquel"],
+];
+
+const directiva = [
+  {
+    cargo: "Presidente",
+    nombre: "Fermin Baracat",
+    foto: "/fermin.jpeg",
+    descripcion: "Representa y coordina la gestión institucional.",
+  },
+  {
+    cargo: "Vicepresidente",
+    nombre: "Joaquina Gonzalo",
+    foto: "/joaquina.jpeg",
+    descripcion: "Acompaña la conducción y fortalece la articulación del equipo.",
+  },
+  {
+    cargo: "Secretario",
+    nombre: "Santiago Gough",
+    foto: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80",
+    descripcion: "Maneja la documentación, actas y comunicación interna.",
+  },
+  {
+    cargo: "Prosecretario",
+    nombre: "Leon Mansilla",
+    foto: "/leon.jpeg",
+    descripcion: "Asiste al secretario y aporta apoyo operativo en la gestión.",
+  },
+  {
+    cargo: "Tesorero",
+    nombre: "Maximiliano Elsezar",
+    foto: "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=900&q=80",
+    descripcion: "Administra los recursos y asegura la sostenibilidad del proyecto.",
+  },
+  {
+    cargo: "Protesorero",
+    nombre: "Franco Ríos",
+    foto: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80",
+    descripcion: "Colabora en la administración financiera y el control de gastos.",
+  },
+  {
+    cargo: "Vocales",
+    nombre: "Lucía Fernanda Díaz y equipo",
+    foto: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80",
+    descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
+  },
 ];
 
 export default function Home() {
@@ -79,6 +128,7 @@ export default function Home() {
 
           <nav className="hidden items-center gap-8 text-sm md:flex">
             <a href="#nosotros" className="transition hover:text-[#e7d7b0]">La comunidad</a>
+            <a href="#comision-directiva" className="transition hover:text-[#e7d7b0]">Comisión directiva</a>
             <a href="#propuestas" className="transition hover:text-[#e7d7b0]">Qué hacemos</a>
             <a href="#agenda" className="transition hover:text-[#e7d7b0]">Agenda</a>
             <a href="#contacto" className="border border-[#e7d7b0] px-4 py-2 text-[#e7d7b0] transition hover:bg-[#e7d7b0] hover:text-[#26372d]">Sumate</a>
@@ -97,6 +147,7 @@ export default function Home() {
           <nav className="border-t border-white/10 bg-[#26372d] px-6 py-5 md:hidden">
             <div className="flex flex-col gap-5 text-sm">
               <a href="#nosotros" onClick={() => setMenuAbierto(false)}>La comunidad</a>
+              <a href="#comision-directiva" onClick={() => setMenuAbierto(false)}>Comisión directiva</a>
               <a href="#propuestas" onClick={() => setMenuAbierto(false)}>Qué hacemos</a>
               <a href="#agenda" onClick={() => setMenuAbierto(false)}>Agenda</a>
               <a href="#contacto" onClick={() => setMenuAbierto(false)} className="text-[#e7d7b0]">Sumate</a>
@@ -134,6 +185,41 @@ export default function Home() {
             <div className="absolute right-0 top-0 h-72 w-[72%] bg-cover bg-center" style={{ backgroundImage: `url(${fotos.joven})` }} />
             <div className="absolute bottom-0 left-0 h-72 w-[62%] border-[10px] border-[#f4f0e6] bg-cover bg-center" style={{ backgroundImage: `url(${fotos.ovejas})` }} />
             <p className="absolute right-3 top-5 bg-[#e7d7b0] px-3 py-2 text-xs font-bold uppercase tracking-widest text-[#26372d]">Trabajo real</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="comision-directiva" className="bg-[#f8f4eb] px-6 py-24 md:py-32">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-12 max-w-3xl">
+            <p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#bd6d3b]">Comisión directiva</p>
+            <h2 className="text-4xl font-bold leading-tight md:text-6xl">La conducción que acompaña cada paso.</h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {directiva.map(({ cargo, nombre, foto, descripcion }) => (
+              <article key={cargo} className="overflow-hidden rounded-2xl border border-[#d8d1c1] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                <div className="h-72 w-full overflow-hidden bg-[#eae3d6]">
+                  <img
+                    src={foto}
+                    alt={nombre}
+                    className="h-full w-full object-cover transition duration-300 hover:scale-105"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <div className="mb-4 flex items-center justify-between gap-3">
+                    <span className="inline-flex rounded-full bg-[#e7d7b0] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#26372d]">
+                      {cargo}
+                    </span>
+                    <Users className="text-[#bd6d3b]" size={22} />
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-[#26372d]">{nombre}</h3>
+                  <p className="mt-4 text-sm leading-relaxed text-[#526158]">{descripcion}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
