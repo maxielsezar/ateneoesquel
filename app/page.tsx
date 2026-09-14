@@ -211,7 +211,7 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2">
             {directiva.map(({ cargo, nombre, foto, descripcion }) => (
               <article key={cargo} className="overflow-hidden rounded-2xl border border-[#d8d1c1] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-                <div className="h-72 w-full overflow-hidden bg-[#eae3d6]">
+                <div className="h-100 w-full overflow-hidden bg-[#eae3d6]">
                   <img
                     src={foto}
                     alt={nombre}
