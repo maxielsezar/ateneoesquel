@@ -17,7 +17,7 @@ import { useState } from "react";
 
 const fotos = {
   campo:
-    "https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1800&q=85",
+    "/vacas.jpeg",
   ovejas:
     "https://images.unsplash.com/photo-1484557985045-edf25e08da73?auto=format&fit=crop&w=1200&q=85",
   joven:
@@ -74,7 +74,7 @@ const directiva = [
   {
     cargo: "Secretario",
     nombre: "Santiago Gough",
-    foto: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80",
+    foto: "/santiago.jpeg",
     descripcion: "Maneja la documentación, actas y comunicación interna.",
   },
   {
@@ -86,19 +86,31 @@ const directiva = [
   {
     cargo: "Tesorero",
     nombre: "Maximiliano Elsezar",
-    foto: "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=900&q=80",
+    foto: "/maxi.jpeg",
     descripcion: "Administra los recursos y asegura la sostenibilidad del proyecto.",
   },
   {
     cargo: "Protesorero",
     nombre: "Franco Ríos",
-    foto: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80",
+    foto: "/franco.jpeg",
     descripcion: "Colabora en la administración financiera y el control de gastos.",
+  },  
+  {
+    cargo: "Vocal",
+    nombre: "Nicolas",
+    foto: "/nicolas.jpeg",
+    descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
+  }, 
+  {
+    cargo: "Vocal",
+    nombre: "Nia Jones",
+    foto: "/nia.jpeg",
+    descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
   },
   {
-    cargo: "Vocales",
-    nombre: "Lucía Fernanda Díaz y equipo",
-    foto: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80",
+    cargo: "Vocal",
+    nombre: "Luna",
+    foto: "/luna.jpeg",
     descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
   },
 ];
