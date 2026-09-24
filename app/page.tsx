@@ -110,7 +110,7 @@ const directiva = [
   },
    {
     cargo: "Vocal",
-    nombre: "Bauti",
+    nombre: "Bautista Gonzalez",
     foto: "/bauti.jpeg",
     descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
   },
@@ -122,7 +122,7 @@ const directiva = [
   },
   {
     cargo: "Vocal",
-    nombre: "Luna",
+    nombre: "Luna Rios",
     foto: "/luna.jpeg",
     descripcion: "Aportan propuestas, acompañamiento y visión colectiva.",
   },
