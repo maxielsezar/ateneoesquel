@@ -49,14 +49,13 @@ const propuestas = [
   },
 ];
 
-const agenda = [
-  ["8 OCT", "14 a 18 hs: Ingreso de animales", "Sociedad Rural Esquel"],
-  ["9 OCT", "Jura de Razas Angus y Hereford", "Sociedad Rural Esquel"],
-  ["9 OCT", "21:00: Peña folklórica: La Muda", "Sociedad Rural Esquel"],
-  ["10 OCT", "Jura de Razas Angus y Hereford", "Sociedad Rural Esquel"],
-  ["10 OCT", "21:00: Peña folklórica: El Entrevero", "Sociedad Rural Esquel"],
-  ["11 OCT", "13:00: Asado Tradicional", "Sociedad Rural Esquel"],
-  ["11 OCT", "14:30: Remate", "Sociedad Rural Esquel"],
+const actividades = [
+  ["10/11", "Actividad previa: Manejo de la depredación en sistemas ganaderos", "Campo Experimental Agroforestal INTA Trevelin"],
+  ["11/11", "Plenaria: Manejo de Bosques con Ganadería Integrada (MBGI)", "Sociedad Rural Esquel"],
+  ["11/11", "Secciones temáticas: forrajes, bienestar animal y salud animal", "Sociedad Rural Esquel"],
+  ["12/11", "Talleres y discusiones: genética, apicultura y forrajeras", "Sociedad Rural Esquel"],
+  ["12/11", "Producción, ambiente y tecnología aplicada en sistemas desafiantes", "Sociedad Rural Esquel"],
+  ["13/11", "Cierre del encuentro y actividades finales", "Sociedad Rural Esquel"],
 ];
 
 const directiva = [
@@ -155,7 +154,7 @@ export default function Home() {
             <a href="#nosotros" className="transition hover:text-[#e7d7b0]">La comunidad</a>
             <a href="#comision-directiva" className="transition hover:text-[#e7d7b0]">Comisión directiva</a>
             <a href="#propuestas" className="transition hover:text-[#e7d7b0]">Qué hacemos</a>
-            <a href="#agenda" className="transition hover:text-[#e7d7b0]">Agenda</a>
+            <a href="#actividades" className="transition hover:text-[#e7d7b0]">Actividades</a>
             <a href="#contacto" className="border border-[#e7d7b0] px-4 py-2 text-[#e7d7b0] transition hover:bg-[#e7d7b0] hover:text-[#26372d]">Sumate</a>
           </nav>
 
@@ -174,7 +173,7 @@ export default function Home() {
               <a href="#nosotros" onClick={() => setMenuAbierto(false)}>La comunidad</a>
               <a href="#comision-directiva" onClick={() => setMenuAbierto(false)}>Comisión directiva</a>
               <a href="#propuestas" onClick={() => setMenuAbierto(false)}>Qué hacemos</a>
-              <a href="#agenda" onClick={() => setMenuAbierto(false)}>Agenda</a>
+              <a href="#actividades" onClick={() => setMenuAbierto(false)}>Actividades</a>
               <a href="#contacto" onClick={() => setMenuAbierto(false)} className="text-[#e7d7b0]">Sumate</a>
             </div>
           </nav>
@@ -260,12 +259,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="agenda" className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-        <div className="grid gap-14 md:grid-cols-[0.7fr_1.3fr]"><div><p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#bd6d3b]">Agenda abierta</p><h2 className="text-4xl font-bold leading-tight md:text-6xl">Nos vemos en el campo.</h2><p className="mt-6 text-[#526158]">Traé mate, preguntas y ganas de cruzarte con gente que está en la misma.</p></div><div className="border-t-2 border-[#26372d]">{agenda.map(([fecha, titulo, lugar]) => (<article key={titulo} className="grid gap-3 border-b border-[#c9c3b5] py-6 md:grid-cols-[110px_1fr_auto] md:items-center"><p className="font-mono text-sm font-bold text-[#bd6d3b]">{fecha}</p><div><h3 className="text-xl font-bold">{titulo}</h3><p className="mt-1 text-sm text-[#718077]">{lugar}</p></div><CalendarDays className="hidden text-[#bd6d3b] md:block" size={22} /></article>))}</div></div>
+      <section id="actividades" className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+        <div className="grid gap-14 md:grid-cols-[0.7fr_1.3fr]"><div><p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#bd6d3b]">Actividades que se van a realizar</p><h2 className="text-4xl font-bold leading-tight md:text-6xl">Nos vemos en el campo.</h2><p className="mt-6 text-[#526158]">Traé mate, preguntas y ganas de cruzarte con gente que está en la misma.</p></div><div className="border-t-2 border-[#26372d]">{actividades.map(([fecha, titulo, lugar]) => (<article key={titulo} className="grid gap-3 border-b border-[#c9c3b5] py-6 md:grid-cols-[110px_1fr_auto] md:items-center"><p className="font-mono text-sm font-bold text-[#bd6d3b]">{fecha}</p><div><h3 className="text-xl font-bold">{titulo}</h3><p className="mt-1 text-sm text-[#718077]">{lugar}</p></div><CalendarDays className="hidden text-[#bd6d3b] md:block" size={22} /></article>))}</div></div>
       </section>
 
-      <section id="contacto" className="bg-[#bd6d3b] px-6 py-24 text-[#fffaf0] md:py-28"><div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-end"><div><p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#f4e5c3]">¿Te sumás?</p><h2 className="max-w-3xl text-5xl font-bold leading-none md:text-7xl">El próximo proyecto puede ser el tuyo.</h2></div><div><p className="mb-7 leading-relaxed text-[#fae9d5]">Escribinos para conocer la agenda, proponer una actividad o simplemente venir a compartir una ronda.</p><a href="mailto:ateneosresquel@gmail.com" className="inline-flex items-center gap-3 bg-[#26372d] px-6 py-4 font-semibold transition hover:bg-white hover:text-[#26372d]">ateneosresquel@gmail.com <ArrowUpRight size={19} /></a><div className="mt-7 flex flex-wrap gap-3"><a href="https://www.instagram.com/ateneosre" target="_blank" rel="noreferrer" aria-label="Instagram de Ateneo Rural Esquel" className="inline-flex items-center gap-2 border border-[#f4e5c3] px-4 py-3 font-semibold transition hover:bg-[#f4e5c3] hover:text-[#26372d]"><FaInstagram aria-hidden="true" size={19} /> Instagram</a><a href="https://www.facebook.com/ateneosre" target="_blank" rel="noreferrer" aria-label="Facebook de Ateneo Rural Esquel" className="inline-flex items-center gap-2 border border-[#f4e5c3] px-4 py-3 font-semibold transition hover:bg-[#f4e5c3] hover:text-[#26372d]"><FaFacebook aria-hidden="true" size={19} /> Facebook</a></div></div></div></section>
-
+      <section id="contacto" className="bg-[#bd6d3b] px-6 py-24 text-[#fffaf0] md:py-28"><div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-end"><div><p className="mb-5 text-sm font-bold uppercase tracking-[0.25em] text-[#f4e5c3]">¿Te sumás?</p><h2 className="max-w-3xl text-5xl font-bold leading-none md:text-7xl">El próximo proyecto puede ser el tuyo.</h2></div><div>      <p className="mb-7 leading-relaxed text-[#fae9d5]">Escribinos para conocer las actividades, proponer una actividad o simplemente venir a compartir una ronda.</p>
+<a href="mailto:ateneosresquel@gmail.com" className="inline-flex items-center gap-3 bg-[#26372d] px-6 py-4 font-semibold transition hover:bg-white hover:text-[#26372d]">ateneosresquel@gmail.com <ArrowUpRight size={19} /></a><div className="mt-7 flex flex-wrap gap-3"><a href="https://www.instagram.com/ateneosre" target="_blank" rel="noreferrer" aria-label="Instagram de Ateneo Rural Esquel" className="inline-flex items-center gap-2 border border-[#f4e5c3] px-4 py-3 font-semibold transition hover:bg-[#f4e5c3] hover:text-[#26372d]"><FaInstagram aria-hidden="true" size={19} /> Instagram</a><a href="https://www.facebook.com/ateneosre" target="_blank" rel="noreferrer" aria-label="Facebook de Ateneo Rural Esquel" className="inline-flex items-center gap-2 border border-[#f4e5c3] px-4 py-3 font-semibold transition hover:bg-[#f4e5c3] hover:text-[#26372d]"><FaFacebook aria-hidden="true" size={19} /> Facebook</a></div></div></div></section>
       <footer className="bg-[#26372d] px-6 py-8 text-sm text-[#c8d0c5]"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 md:flex-row md:items-center"><p>© {new Date().getFullYear()} Ateneo Rural Esquel</p><div className="flex items-center gap-4"><p>Territorio · Comunidad · Futuro</p><div className="flex items-center gap-3"><a href="https://www.instagram.com/ateneosre" target="_blank" rel="noreferrer" aria-label="Instagram de Ateneo Rural Esquel" className="transition hover:text-[#e7d7b0]"><FaInstagram aria-hidden="true" size={19} /></a><a href="https://www.facebook.com/ateneosre" target="_blank" rel="noreferrer" aria-label="Facebook de Ateneo Rural Esquel" className="transition hover:text-[#e7d7b0]"><FaFacebook aria-hidden="true" size={19} /></a></div></div></div></footer>
     </main>
   );
