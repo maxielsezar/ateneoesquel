@@ -18,11 +18,11 @@ import { useState } from "react";
 
 const fotos = {
   campo:
-    "/vacas.jpeg",
+    "/jovenes.jpeg",
   ovejas:
     "https://images.unsplash.com/photo-1484557985045-edf25e08da73?auto=format&fit=crop&w=1200&q=85",
   joven:
-    "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85",
+    "/jovenes.jpeg",
 };
 
 const propuestas = [
@@ -181,12 +181,12 @@ export default function Home() {
       </header>
 
       <section id="inicio" className="relative min-h-[720px] overflow-hidden bg-[#26372d] pt-28 text-white md:min-h-screen">
-        <div className="absolute inset-0 bg-cover bg-center opacity-55" style={{ backgroundImage: `url(${fotos.campo})` }} />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#16251d] via-[#26372d]/75 to-transparent" />
+        <div className="absolute inset-0 bg-cover bg-center opacity-90" style={{ backgroundImage: `url(${fotos.campo})` }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#16251d]/65 via-[#26372d]/40 to-transparent" />
         <div className="relative mx-auto flex min-h-[590px] max-w-7xl items-end px-6 pb-24 md:items-center md:pb-0">
           <div className="max-w-3xl">
             <div className="mb-7 flex items-center gap-2 text-sm uppercase tracking-[0.22em] text-[#e7d7b0]"><MapPin size={16} /> Esquel, Chubut</div>
-            <h1 className="max-w-3xl text-5xl font-bold leading-[0.95] tracking-tight md:text-8xl">El campo también es <span className="text-[#e7d7b0]">futuro.</span></h1>
+            <h1 className="max-w-3xl text-5xl font-bold leading-[0.95] tracking-tight md:text-8xl">Jovenes por el futuro del campo</h1>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-[#f5f1e8] md:text-xl">Somos una comunidad de jóvenes rurales que produce, comparte y arma proyectos para seguir haciendo crecer nuestro lugar.</p>
             <div className="mt-9 flex flex-wrap gap-4">
               <a href="#propuestas" className="inline-flex items-center gap-3 bg-[#e7d7b0] px-6 py-4 font-semibold text-[#26372d] transition hover:bg-white">Conocé la movida <ArrowDownRight size={19} /></a>
@@ -206,9 +206,9 @@ export default function Home() {
             <div className="mt-9 flex items-center gap-5 border-t border-[#c9c3b5] pt-6"><Mountain className="text-[#bd6d3b]" size={31} /><p className="max-w-xs text-sm font-semibold leading-relaxed">Desde Esquel, para cada rincón que elige quedarse.</p></div>
           </div>
           <div className="relative min-h-[430px]">
-            <div className="absolute right-0 top-0 h-72 w-[72%] bg-cover bg-center" style={{ backgroundImage: `url(${fotos.joven})` }} />
-            <div className="absolute bottom-0 left-0 h-72 w-[62%] border-[10px] border-[#f4f0e6] bg-cover bg-center" style={{ backgroundImage: `url(${fotos.ovejas})` }} />
-            <p className="absolute right-3 top-5 bg-[#e7d7b0] px-3 py-2 text-xs font-bold uppercase tracking-widest text-[#26372d]">Trabajo real</p>
+            <div className="absolute right-0 top-0 z-10 h-72 w-[72%] bg-cover bg-center" style={{ backgroundImage: `url(${fotos.joven})` }} />
+            <div className="absolute bottom-0 left-0 z-0 h-72 w-[62%] border-[10px] border-[#f4f0e6] bg-cover bg-center" style={{ backgroundImage: `url(${fotos.ovejas})` }} />
+            <p className="absolute right-3 top-5 z-20 bg-[#e7d7b0] px-3 py-2 text-xs font-bold uppercase tracking-widest text-[#26372d]">Trabajo real</p>
           </div>
         </div>
       </section>
